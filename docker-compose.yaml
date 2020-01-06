@@ -1,0 +1,16 @@
+version: '3.7'
+services:
+    client:
+      image: pokedex:latest
+      build: .
+      ports:
+        - target: 80
+          published: 80
+          protocol: tcp    
+    jenkins:
+      image: jenkins/jenkins
+      volumes:
+        - type: volume
+          target: /var/jenkins_home
+      environment:
+        - JENKINS_OPTS="--prefix=/jenkins"
