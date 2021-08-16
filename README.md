@@ -1,5 +1,6 @@
 # Vue Pokédex
 
+
 A Pokédex made for fun in Vue.js.
 
 The Pokédex includes the first 251 Pokémon, with:
